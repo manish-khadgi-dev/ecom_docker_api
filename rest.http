@@ -1,0 +1,29 @@
+@url = http://localhost:8000/api/v1
+
+// admin Registration
+POST {{url}}/admin
+Content-Type: application/json
+
+{
+    "fName": "Prem",
+    "lName": "Acharya",
+    "email": "a@a3.com",
+    "phone": "0987654",
+    "address": "sydney",
+    "password": "123456"
+}
+
+
+### admin login
+POST {{url}}/admin/login
+Content-Type: application/json
+
+{
+   
+    "email": "a@a4.com",
+    "password": "123456"
+}
+
+# === category
+### fetch cat
+GET {{url}}/category
